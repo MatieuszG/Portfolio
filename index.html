@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jan Kowalski – Full-stack developer</title>
-  <meta name="description" content="Portfolio Jana Kowalskiego, full-stack developera. Projekty, umiejętności i kontakt.">
+  <title>Mateusz Goleń – Game Developer</title>
+  <meta name="description" content="Portfolio Mateusza Goleń, game developera. Gry tworzone głównie w Unity. Projekty, umiejętności i kontakt.">
   <meta name="theme-color" content="#10131c">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,39 +13,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main" data-i18n="skip">Przejdź do treści</a>
+  <a class="skip" href="#main">Przejdź do treści</a>
 
   <header class="site-header">
-    <a class="brand" href="#top">JK</a>
-    <nav aria-label="Menu główne" data-i18n-aria="nav.label">
-      <a href="#about" data-i18n="nav.about">O mnie</a>
-      <a href="#projects" data-i18n="nav.projects">Projekty</a>
-      <a href="#skills" data-i18n="nav.skills">Umiejętności</a>
-      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    <a class="brand" href="#top">MG</a>
+    <nav aria-label="Menu główne">
+      <a href="#about">O mnie</a>
+      <a href="#projects">Projekty</a>
+      <a href="#skills">Umiejętności</a>
+      <a href="#contact">Kontakt</a>
     </nav>
-    <div class="lang" role="group" aria-label="Język" data-i18n-aria="lang.label">
-      <button type="button" data-lang="pl" aria-pressed="true">PL</button>
-      <button type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-text">
-        <h1>Jan<br>Kowalski</h1>
-        <p class="role" data-i18n="hero.role">Full-stack developer</p>
-        <p class="lead" data-i18n="hero.lead">Buduję aplikacje webowe od bazy danych po interfejs. Lubię czysty kod, szybkie strony i rozwiązywanie realnych problemów.</p>
+        <h1>Mateusz<br>Goleń</h1>
+        <p class="role">Game Developer</p>
+        <p class="lead">Robię gry głównie w silniku Unity. Lubię czysty i zoptymalizowany kod oraz szukanie rozwiązań do skomplikowanych problemów.</p>
         <div class="actions">
-          <a class="btn primary" href="#projects" data-i18n="hero.cta1">Zobacz projekty</a>
-          <a class="btn" href="#contact" data-i18n="hero.cta2">Napisz do mnie</a>
+          <a class="btn primary" href="#projects">Zobacz projekty</a>
+          <a class="btn" href="#contact">Napisz do mnie</a>
         </div>
       </div>
 
       <figure class="code" aria-label="Fragment kodu opisujący autora">
 <pre><code><span class="k">const</span> <span class="v">developer</span> = {
-  <span class="p">name</span>: <span class="s">"Jan Kowalski"</span>,
-  <span class="p">role</span>: <span class="s">"Full-stack developer"</span>,
-  <span class="p">stack</span>: [<span class="s">"TypeScript"</span>, <span class="s">"Python"</span>, <span class="s">"PostgreSQL"</span>],
+  <span class="p">name</span>: <span class="s">"Mateusz Goleń"</span>,
+  <span class="p">role</span>: <span class="s">"Game Developer"</span>,
+  <span class="p">stack</span>: [<span class="s">"Unity"</span>, <span class="s">"C#"</span>, <span class="s">"JavaScript"</span>],
   <span class="p">location</span>: <span class="s">"Poznań, PL"</span>,
   <span class="p">openToWork</span>: <span class="k">true</span><span class="caret" aria-hidden="true"></span>
 };</code></pre>
@@ -53,81 +49,79 @@
     </section>
 
     <section id="about" class="block">
-      <h2 data-i18n="about.title">O mnie</h2>
+      <h2>O mnie</h2>
       <div class="about-grid">
         <div class="prose">
-          <p data-i18n="about.p1">Zacząłem programować, bo chciałem sam zbudować narzędzie, którego nie mogłem znaleźć. Od tamtej pory pracuję nad projektami webowymi: od małych aplikacji po większe systemy z własnym backendem.</p>
-          <p data-i18n="about.p2">Poza kodem czytam o architekturze oprogramowania, a w wolnych chwilach rozwijam własne projekty open source.</p>
+          <p>Moje przygody z programowaniem zaczęły się wiele lat temu, kiedy po raz pierwszy poznałem Scratcha w szkole podstawowej. Już wtedy zamiast po prostu wykonywać zadania, szukałem sposobów na usprawnienie kodu lub dodawanie nowych funkcji. Na poważnie kodowaniem zająłem się dopiero w technikum, gdzie poznałem takie języki jak HTML, JS, PHP, CSS oraz C# i Unity, w których aktywnie siedzę do dziś.</p>
+          <p>W wolnym czasie interesuję się sytuacją na rynku oraz gram w gry, z których moje ulubione to Terraria, Ultrakill oraz Hollow Knight: Silksong.</p>
         </div>
         <dl class="facts">
-          <div><dt data-i18n="about.f1.l">Lokalizacja</dt><dd data-i18n="about.f1.v">Poznań, Polska</dd></div>
-          <div><dt data-i18n="about.f2.l">Skupiam się na</dt><dd data-i18n="about.f2.v">Aplikacjach webowych i API</dd></div>
-          <div><dt data-i18n="about.f3.l">Uczę się</dt><dd data-i18n="about.f3.v">Rust i systemów rozproszonych</dd></div>
+          <div><dt>Lokalizacja</dt><dd>Poznań, Polska</dd></div>
+          <div><dt>Skupiam się na</dt><dd>Aplikacjach webowych i API</dd></div>
+          <div><dt>Uczę się</dt><dd>Rust i systemów rozproszonych</dd></div>
         </dl>
       </div>
     </section>
 
     <section id="projects" class="block">
-      <h2 data-i18n="projects.title">Projekty</h2>
+      <h2>Projekty</h2>
       <ul class="projects">
         <li>
           <div class="proj-head">
-            <h3 data-i18n="p1.title">Menedżer zadań</h3>
+            <h3>Cat Guardian</h3>
             <div class="links">
-              <a href="https://github.com/TWOJ-LOGIN/projekt-1" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
-              <a href="https://twoj-login.github.io/projekt-1" target="_blank" rel="noopener" data-i18n="link.demo">Demo</a>
+              <a class="more" href="projects/cat-guardian.html" aria-label="Szczegóły projektu Cat Guardian">Szczegóły</a>
+              <a href="https://gitlab.com/wokun/cat-guardian-the-game" target="_blank" rel="noopener">Kod</a>
             </div>
           </div>
-          <p data-i18n="p1.desc">Aplikacja do zarządzania zadaniami z tablicą kanban, logowaniem i synchronizacją w czasie rzeczywistym.</p>
-          <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
+          <p>Projekt typu metroidvania, platformer 2D inspirowany takimi grami jak Hollow Knight i Nine Sols.</p>
+          <ul class="tags"><li>Unity</li><li>C#</li></ul>
         </li>
         <li>
           <div class="proj-head">
-            <h3 data-i18n="p2.title">Monitor cen</h3>
+            <h3>Lume rush</h3>
             <div class="links">
-              <a href="https://github.com/TWOJ-LOGIN/projekt-2" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
+              <a class="more" href="projects/lume-rush.html" aria-label="Szczegóły projektu Lume rush">Szczegóły</a>
+              <a href="https://gitlab.com/Rumsse/evacuation" target="_blank" rel="noopener">Kod</a>
             </div>
           </div>
-          <p data-i18n="p2.desc">Skrypt, który śledzi ceny wybranych produktów i wysyła powiadomienie, gdy cena spadnie poniżej ustalonego progu.</p>
-          <ul class="tags"><li>Python</li><li>SQLite</li><li>Docker</li></ul>
+          <p>Projekt 3D o próbie ucieczki z naszego układu słonecznego. Zbieraj materiały rozsiane po wielu planetach i stwórz hipernapęd, żeby uciec.</p>
+          <ul class="tags"><li>Unity</li><li>C#</li></ul>
         </li>
         <li>
           <div class="proj-head">
-            <h3 data-i18n="p3.title">Skracacz linków</h3>
+            <h3>UltraJump</h3>
             <div class="links">
-              <a href="https://github.com/TWOJ-LOGIN/projekt-3" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
-              <a href="https://twoj-login.github.io/projekt-3" target="_blank" rel="noopener" data-i18n="link.demo">Demo</a>
+              <a class="more" href="projects/ultrajump.html" aria-label="Szczegóły projektu UltraJump">Szczegóły</a>
+              <a href="https://gitlab.com/Rumsse/unrealengineproject" target="_blank" rel="noopener">Kod</a>
             </div>
           </div>
-          <p data-i18n="p3.desc">Prosty serwis do skracania adresów URL z statystykami kliknięć i własnym REST API.</p>
-          <ul class="tags"><li>TypeScript</li><li>Express</li><li>Redis</li></ul>
+          <p>Projekt wykonany na zajęcia z Unreal Engine. Gra platformowa 3D, która trudnością przypomina gry takie jak Getting Over It.</p>
+          <ul class="tags"><li>Unreal Engine</li></ul>
         </li>
       </ul>
     </section>
 
     <section id="skills" class="block">
-      <h2 data-i18n="skills.title">Umiejętności</h2>
+      <h2>Umiejętności</h2>
       <dl class="skills">
-        <div><dt data-i18n="skills.lang">Języki</dt><dd>TypeScript, JavaScript, Python, SQL</dd></div>
-        <div><dt data-i18n="skills.front">Frontend</dt><dd>React, HTML, CSS, Vite</dd></div>
-        <div><dt data-i18n="skills.back">Backend</dt><dd>Node.js, Express, FastAPI, PostgreSQL, Redis</dd></div>
-        <div><dt data-i18n="skills.tools">Narzędzia</dt><dd>Git, GitHub Actions, Docker, Linux</dd></div>
+        <div><dt>Języki</dt><dd>C#, JavaScript</dd></div>
+        <div><dt>Narzędzia</dt><dd>GitHub, Unity, GitKraken</dd></div>
       </dl>
     </section>
 
     <section id="contact" class="block contact">
-      <h2 data-i18n="contact.title">Kontakt</h2>
-      <p class="lead" data-i18n="contact.lead">Szukasz developera do projektu albo chcesz po prostu porozmawiać o kodzie? Napisz.</p>
-      <a class="mail" href="mailto:twoj@email.pl">twoj@email.pl</a>
+      <h2>Kontakt</h2>
+      <p class="lead">Szukasz developera do projektu lub masz pomysł i chcesz, żeby ktoś go wprowadził w życie? Pisz śmiało.</p>
+      <a class="mail" href="mailto:mateusz.businessmail@gmail.com">mateusz.businessmail@gmail.com</a>
       <ul class="social">
-        <li><a href="https://github.com/TWOJ-LOGIN" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/TWOJ-PROFIL" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/MatieuszG/Portfolio" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p><span data-i18n="footer.text">Zaprojektowane i napisane ręcznie.</span> © <span id="year">2026</span> Jan Kowalski</p>
+    <p>Zaprojektowane i napisane ręcznie. © <span id="year">2026</span> Mateusz Goleń</p>
   </footer>
 
   <script src="script.js"></script>
