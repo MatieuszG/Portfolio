@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jan Kowalski – Full-stack developer</title>
+  <meta name="description" content="Portfolio Jana Kowalskiego, full-stack developera. Projekty, umiejętności i kontakt.">
+  <meta name="theme-color" content="#10131c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Przejdź do treści</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">JK</a>
+    <nav aria-label="Menu główne" data-i18n-aria="nav.label">
+      <a href="#about" data-i18n="nav.about">O mnie</a>
+      <a href="#projects" data-i18n="nav.projects">Projekty</a>
+      <a href="#skills" data-i18n="nav.skills">Umiejętności</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Język" data-i18n-aria="lang.label">
+      <button type="button" data-lang="pl" aria-pressed="true">PL</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <h1>Jan<br>Kowalski</h1>
+        <p class="role" data-i18n="hero.role">Full-stack developer</p>
+        <p class="lead" data-i18n="hero.lead">Buduję aplikacje webowe od bazy danych po interfejs. Lubię czysty kod, szybkie strony i rozwiązywanie realnych problemów.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects" data-i18n="hero.cta1">Zobacz projekty</a>
+          <a class="btn" href="#contact" data-i18n="hero.cta2">Napisz do mnie</a>
+        </div>
+      </div>
+
+      <figure class="code" aria-label="Fragment kodu opisujący autora">
+<pre><code><span class="k">const</span> <span class="v">developer</span> = {
+  <span class="p">name</span>: <span class="s">"Jan Kowalski"</span>,
+  <span class="p">role</span>: <span class="s">"Full-stack developer"</span>,
+  <span class="p">stack</span>: [<span class="s">"TypeScript"</span>, <span class="s">"Python"</span>, <span class="s">"PostgreSQL"</span>],
+  <span class="p">location</span>: <span class="s">"Poznań, PL"</span>,
+  <span class="p">openToWork</span>: <span class="k">true</span><span class="caret" aria-hidden="true"></span>
+};</code></pre>
+      </figure>
+    </section>
+
+    <section id="about" class="block">
+      <h2 data-i18n="about.title">O mnie</h2>
+      <div class="about-grid">
+        <div class="prose">
+          <p data-i18n="about.p1">Zacząłem programować, bo chciałem sam zbudować narzędzie, którego nie mogłem znaleźć. Od tamtej pory pracuję nad projektami webowymi: od małych aplikacji po większe systemy z własnym backendem.</p>
+          <p data-i18n="about.p2">Poza kodem czytam o architekturze oprogramowania, a w wolnych chwilach rozwijam własne projekty open source.</p>
+        </div>
+        <dl class="facts">
+          <div><dt data-i18n="about.f1.l">Lokalizacja</dt><dd data-i18n="about.f1.v">Poznań, Polska</dd></div>
+          <div><dt data-i18n="about.f2.l">Skupiam się na</dt><dd data-i18n="about.f2.v">Aplikacjach webowych i API</dd></div>
+          <div><dt data-i18n="about.f3.l">Uczę się</dt><dd data-i18n="about.f3.v">Rust i systemów rozproszonych</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="projects" class="block">
+      <h2 data-i18n="projects.title">Projekty</h2>
+      <ul class="projects">
+        <li>
+          <div class="proj-head">
+            <h3 data-i18n="p1.title">Menedżer zadań</h3>
+            <div class="links">
+              <a href="https://github.com/TWOJ-LOGIN/projekt-1" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
+              <a href="https://twoj-login.github.io/projekt-1" target="_blank" rel="noopener" data-i18n="link.demo">Demo</a>
+            </div>
+          </div>
+          <p data-i18n="p1.desc">Aplikacja do zarządzania zadaniami z tablicą kanban, logowaniem i synchronizacją w czasie rzeczywistym.</p>
+          <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul>
+        </li>
+        <li>
+          <div class="proj-head">
+            <h3 data-i18n="p2.title">Monitor cen</h3>
+            <div class="links">
+              <a href="https://github.com/TWOJ-LOGIN/projekt-2" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
+            </div>
+          </div>
+          <p data-i18n="p2.desc">Skrypt, który śledzi ceny wybranych produktów i wysyła powiadomienie, gdy cena spadnie poniżej ustalonego progu.</p>
+          <ul class="tags"><li>Python</li><li>SQLite</li><li>Docker</li></ul>
+        </li>
+        <li>
+          <div class="proj-head">
+            <h3 data-i18n="p3.title">Skracacz linków</h3>
+            <div class="links">
+              <a href="https://github.com/TWOJ-LOGIN/projekt-3" target="_blank" rel="noopener" data-i18n="link.code">Kod</a>
+              <a href="https://twoj-login.github.io/projekt-3" target="_blank" rel="noopener" data-i18n="link.demo">Demo</a>
+            </div>
+          </div>
+          <p data-i18n="p3.desc">Prosty serwis do skracania adresów URL z statystykami kliknięć i własnym REST API.</p>
+          <ul class="tags"><li>TypeScript</li><li>Express</li><li>Redis</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="block">
+      <h2 data-i18n="skills.title">Umiejętności</h2>
+      <dl class="skills">
+        <div><dt data-i18n="skills.lang">Języki</dt><dd>TypeScript, JavaScript, Python, SQL</dd></div>
+        <div><dt data-i18n="skills.front">Frontend</dt><dd>React, HTML, CSS, Vite</dd></div>
+        <div><dt data-i18n="skills.back">Backend</dt><dd>Node.js, Express, FastAPI, PostgreSQL, Redis</dd></div>
+        <div><dt data-i18n="skills.tools">Narzędzia</dt><dd>Git, GitHub Actions, Docker, Linux</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="block contact">
+      <h2 data-i18n="contact.title">Kontakt</h2>
+      <p class="lead" data-i18n="contact.lead">Szukasz developera do projektu albo chcesz po prostu porozmawiać o kodzie? Napisz.</p>
+      <a class="mail" href="mailto:twoj@email.pl">twoj@email.pl</a>
+      <ul class="social">
+        <li><a href="https://github.com/TWOJ-LOGIN" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/TWOJ-PROFIL" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><span data-i18n="footer.text">Zaprojektowane i napisane ręcznie.</span> © <span id="year">2026</span> Jan Kowalski</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
